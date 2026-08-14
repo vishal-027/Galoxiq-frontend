@@ -1,0 +1,224 @@
+/* ============================================================
+   GALOXIQ — GLOBAL DESIGN TOKENS
+   This is the ONLY place you should need to edit for
+   colors, fonts, spacing, or corner-roundness.
+   Every component reuses these variables, so changing a
+   value here updates the whole site.
+   ============================================================ */
+
+:root {
+  /* Colors */
+  --color-primary: #2563eb;
+  --color-primary-hover: #1d4ed8;
+  --color-dark: #2a2a2a;
+  --color-bg: #ffffff;
+  --color-surface: #f8fafc;
+  --color-border: #e5e7eb;
+  --color-text-primary: #2a2a2a;
+  --color-text-secondary: #6b7280;
+  --color-success: #16a34a;
+  --color-warning: #f59e0b;
+  --color-danger: #dc2626;
+
+  /* Corner roundness */
+  --radius-btn: 12px;
+  --radius-card: 20px;
+  --radius-input: 12px;
+  --radius-img: 24px;
+
+  /* Spacing scale (use these instead of random px values) */
+  --space-1: 8px;
+  --space-2: 16px;
+  --space-3: 24px;
+  --space-4: 32px;
+  --space-5: 40px;
+  --space-6: 48px;
+  --space-7: 64px;
+  --space-8: 80px;
+  --space-9: 96px;
+  --space-10: 120px;
+
+  /* Fonts */
+  --font-heading: "Manrope", sans-serif;
+  --font-body: "Inter", sans-serif;
+}
+
+/* ============================================================
+   RESET — leave this section alone, it just removes browser
+   default spacing/styles so the design looks consistent.
+   ============================================================ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--color-text-primary);
+  background: var(--color-bg);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-heading);
+  font-weight: 800;
+  color: var(--color-text-primary);
+  line-height: 1.15;
+}
+
+:focus-visible {
+  outline: 3px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+/* ============================================================
+   LAYOUT HELPERS — reused by every section/component
+   ============================================================ */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--space-3);
+}
+
+.section {
+  padding: var(--space-8) 0;
+}
+
+.section.alt {
+  background: var(--color-surface);
+}
+
+.section-head {
+  text-align: center;
+  max-width: 640px;
+  margin: 0 auto var(--space-6);
+}
+
+.section-head h2 {
+  font-size: 40px;
+  margin-bottom: var(--space-2);
+}
+
+.section-head p {
+  font-size: 18px;
+  color: var(--color-text-secondary);
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #eff4ff;
+  color: var(--color-primary);
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 8px 16px;
+  border-radius: 999px;
+  margin-bottom: var(--space-3);
+}
+
+.eyebrow::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--color-primary);
+}
+
+.section-head .eyebrow {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ============================================================
+   BUTTONS — shared by every component. Change button look
+   here once instead of in each component's CSS file.
+   ============================================================ */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: var(--font-body);
+  padding: 14px 28px;
+  border-radius: var(--radius-btn);
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.btn-primary {
+  background: var(--color-primary);
+  color: #fff;
+}
+.btn-primary:hover {
+  background: var(--color-primary-hover);
+  transform: translateY(-1px);
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--color-dark);
+  border: 1.5px solid var(--color-border);
+}
+.btn-outline:hover {
+  border-color: var(--color-dark);
+  background: var(--color-surface);
+}
+
+.btn-white {
+  background: #fff;
+  color: var(--color-primary);
+}
+.btn-white:hover {
+  background: #eff4ff;
+}
+
+/* ============================================================
+   RESPONSIVE — breakpoints match the design spec:
+   Mobile <640, Small Tablet >=640, Tablet >=768,
+   Laptop >=1024, Desktop >=1280, Large Desktop >=1536
+   ============================================================ */
+@media (max-width: 640px) {
+  .section {
+    padding: var(--space-6) 0;
+  }
+  .section-head h2 {
+    font-size: 30px;
+  }
+  .section-head p {
+    font-size: 16px;
+  }
+}

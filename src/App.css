@@ -1,0 +1,8 @@
+/* App.css
+   Left intentionally minimal — global styles live in index.css
+   so there's one source of truth. Add app-wide overrides here
+   only if something needs to sit outside a specific component. */
+
+.app {
+  overflow-x: hidden;
+}
