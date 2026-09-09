@@ -9,8 +9,9 @@ function Footer() {
             Galoxiq<span>.</span>
           </a>
           <p>
-            Seller account management and web development for businesses that
-            want to grow online, without juggling multiple agencies.
+            Helping businesses build, manage, and grow their digital presence —
+            from marketplace management and websites to online profiles and
+            digital PR.
           </p>
           <div className="social-row">
             <a

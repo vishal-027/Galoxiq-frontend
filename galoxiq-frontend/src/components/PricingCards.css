@@ -214,3 +214,67 @@
     min-height: auto;
   }
 }
+.plan-demo-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  padding: 12px 18px;
+  margin-bottom: 12px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #1e1e2f, #3a3a55);
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 15px;
+  letter-spacing: 0.2px;
+  box-shadow: 0 4px 14px rgba(30, 30, 47, 0.25);
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    background 0.25s ease;
+}
+
+.plan-demo-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(30, 30, 47, 0.35);
+  background: linear-gradient(135deg, #2a2a40, #4a4a68);
+}
+
+.plan-demo-btn:active {
+  transform: translateY(0);
+}
+
+.demo-live-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #4ade80; /* green "live" indicator, distinct from the dark button bg */
+  box-shadow: 0 0 0 0 rgba(74, 222, 128, 0.6);
+  animation: livePulse 1.6s ease-in-out infinite;
+}
+
+.demo-arrow {
+  width: 17px;
+  height: 17px;
+  margin-left: 2px;
+  transition: transform 0.25s ease;
+}
+
+.plan-demo-btn:hover .demo-arrow {
+  transform: translateX(4px);
+}
+
+@keyframes livePulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(74, 222, 128, 0.6);
+  }
+  70% {
+    box-shadow: 0 0 0 6px rgba(74, 222, 128, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(74, 222, 128, 0);
+  }
+}

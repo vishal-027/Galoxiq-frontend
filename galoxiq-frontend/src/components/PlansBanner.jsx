@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "./PricingCards.css";
 
 function PlanBanner({ title, icon, plans }) {
   const [index, setIndex] = useState(0);
@@ -51,6 +52,30 @@ function PlanBanner({ title, icon, plans }) {
             </li>
           ))}
         </ul>
+
+        {plan.demoUrl && (
+          <a
+            href={plan.demoUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="plan-demo-btn"
+          >
+            <span className="demo-live-dot"></span>
+            <span>Live Demo</span>
+
+            <svg
+              className="demo-arrow"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              aria-hidden="true"
+            >
+              <line x1="5" y1="12" x2="19" y2="12" />
+              <polyline points="13 6 19 12 13 18" />
+            </svg>
+          </a>
+        )}
 
         <a href="#contact" className="btn btn-primary plan-btn">
           Choose {plan.name}

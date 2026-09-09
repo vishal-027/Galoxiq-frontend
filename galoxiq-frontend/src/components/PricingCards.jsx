@@ -53,6 +53,7 @@ const webPlans = [
     badge: "Launch Offer",
     price: "₹3,999",
     period: "",
+    demoUrl: "https://galoxiq.in",
     desc: "A clean single site to get your business online fast.",
     features: [
       "Single page + Contact Form Integration",
@@ -67,6 +68,7 @@ const webPlans = [
     originalPrice: "₹9,999",
     price: "₹8,999",
     period: "",
+    demoUrl: "https://gym-01-umber.vercel.app/",
     badge: "Most Popular",
     desc: "A stronger site built to convert visitors into customers.",
     features: [

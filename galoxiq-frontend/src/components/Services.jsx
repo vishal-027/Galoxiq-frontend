@@ -102,10 +102,11 @@ function Services() {
       <div className="container">
         <div className="section-head">
           <span className="eyebrow">What We Do</span>
-          <h2>Two services. One goal: your growth.</h2>
+          <h2>Everything you need to grow online.</h2>
           <p>
-            Whether you sell on marketplaces, need a website, or both — Galoxiq
-            handles it end to end.
+            From marketplace management and websites to online profiles and
+            digital PR, we help businesses build, manage, and strengthen their
+            digital presence.
           </p>
         </div>
 

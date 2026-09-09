@@ -15,8 +15,9 @@ function Hero() {
             <span className="accent">Build Your Digital Presence. </span>{" "}
           </h1>
           <p className="lead">
-            We manage your marketplace presence and build modern websites that
-            help your business grow.
+            Everything your business needs to grow online — from marketplace
+            management and modern websites to online profiles and digital
+            presence.
           </p>
           <div className="hero-actions">
             <a href="#services" className="btn btn-primary">

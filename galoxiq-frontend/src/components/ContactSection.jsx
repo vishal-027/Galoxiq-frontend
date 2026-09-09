@@ -124,7 +124,11 @@ function ContactSection() {
                   </option>
                   <option value="Website Development">
                     Website Development
-                  </option>
+                  </option>{" "}
+                  <option value="Google Biography">Google Biography</option>{" "}
+                  <option value="Google Knowledge">Google Knowledge</option>{" "}
+                  <option value="Press Release">Press Release</option>
+                  <option value="IMDb">IMDb</option>
                 </select>
               </div>
               <div className="form-group">
