@@ -93,7 +93,7 @@ function Footer() {
               <a href="#services">PR & Digital Presence</a>
             </li>
             <li>
-              <a href="#services">Google Knowledge & Online Profilet</a>
+              <a href="#services">Google Knowledge & Online Profile</a>
             </li>
           </ul>
         </div>
