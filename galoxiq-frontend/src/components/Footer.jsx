@@ -86,7 +86,14 @@ function Footer() {
               <a href="#services">Seller Management</a>
             </li>
             <li>
-              <a href="#services">Web Development</a>
+              <a href="#services">Web Services</a>
+            </li>
+
+            <li>
+              <a href="#services">PR & Digital Presence</a>
+            </li>
+            <li>
+              <a href="#services">Google Knowledge & Online Profilet</a>
             </li>
           </ul>
         </div>
