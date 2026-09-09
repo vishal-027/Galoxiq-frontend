@@ -3,9 +3,10 @@ import "./PricingCards.css";
 
 const sellerPlans = [
   {
-    name: "Starter",
-    originalPrice: "₹3,000",
-    price: "₹2,500",
+    name: "Basic Plan",
+    originalPrice: "₹3,999",
+    badge: "Launch Offer",
+    price: "₹3,499",
     period: "/month",
     desc: "Perfect for new sellers getting started on one marketplace.",
     features: [
@@ -16,33 +17,23 @@ const sellerPlans = [
     ],
   },
   {
-    name: "Growth",
-    price: "₹6,000",
-    period: "/month",
+    name: "Standard",
+    badge: "Most Popular",
+    originalPrice: "₹9,999",
+    price: "₹8,499",
+    period: "/3 months",
     desc: "For sellers ready to scale across marketplaces.",
     features: [
-      "Up to 3 marketplace accounts",
-      "Listing setup (up to 100 SKUs)",
-      "Ads management",
+      "1 marketplace account",
+      "Listing setup (up to 80 SKUs)",
+      "Technical issue support",
       "Weekly performance report",
       "Priority support",
     ],
   },
+
   {
     name: "Scale",
-    price: "₹10,000",
-    period: "/month",
-    desc: "For established sellers pushing for higher volume.",
-    features: [
-      "Unlimited marketplace accounts",
-      "Unlimited SKU management",
-      "Advanced ads & promotions strategy",
-      "Dedicated account manager",
-      "Bi-weekly strategy calls",
-    ],
-  },
-  {
-    name: "Enterprise",
     price: "Custom Pricing",
     period: "",
     desc: "Tailored operations for high-volume sellers & brands.",
@@ -58,12 +49,13 @@ const sellerPlans = [
 const webPlans = [
   {
     name: "Starter Website",
-    originalPrice: "₹9,999",
-    price: "₹8,999",
+    originalPrice: "₹4,499",
+    badge: "Launch Offer",
+    price: "₹3,999",
     period: "",
     desc: "A clean single site to get your business online fast.",
     features: [
-      "Up to 5 pages",
+      "Single page + Contact Form Integration",
       "Mobile responsive design",
       "Basic SEO setup",
       "1 round of revisions",
@@ -71,43 +63,88 @@ const webPlans = [
     ],
   },
   {
-    name: "Business Website",
-    originalPrice: "₹24,999",
-    price: "₹19,999",
+    name: "Growth Website",
+    originalPrice: "₹9,999",
+    price: "₹8,999",
     period: "",
     badge: "Most Popular",
     desc: "A stronger site built to convert visitors into customers.",
     features: [
-      "Up to 10 pages",
-      "Custom design (not a template)",
+      "Up to 5 pages",
+      "Custom design with Responsive UI",
       "Booking / contact form integration",
       "3 rounds of revisions",
       "18-day delivery",
     ],
   },
   {
-    name: "Growth Website",
+    name: "Business Website",
     price: "Custom Pricing",
     period: "",
     desc: "For companies that need more pages, features & polish.",
     features: [
-      "Up to 20 pages",
-      "Advanced animations & interactions",
+      "Up to 10 pages",
+      "Advanced UI & interactions",
       "Blog / CMS integration",
       "5 rounds of revisions",
       "3 months of support",
     ],
   },
+];
+
+const bioPlans = [
   {
-    name: "Enterprise",
-    price: "Custom Pricing",
+    name: "Google Biography",
+    originalPrice: "₹2,999",
+    price: "₹2,499",
+    badge: "Limited Offer",
     period: "",
-    desc: "Large-scale sites built to your exact specification.",
+    desc: "Build a professional online profile that showcases your identity and achievements.",
     features: [
-      "Unlimited pages",
-      "Custom features & integrations",
-      "Dedicated project manager",
-      "Ongoing maintenance plan",
+      "Professional biography creation",
+      "Profile information optimization",
+      "Online presence enhancement",
+      "Structured profile content",
+    ],
+  },
+  {
+    name: "Google Knowledge Panel",
+    price: "₹20,000",
+    period: "",
+    badge: "Premium",
+    desc: "Strengthen your online presence and eligibility for a Google Knowledge Panel.",
+    features: [
+      "Knowledge Panel eligibility assessment",
+      "Google entity presence optimization",
+      "Online authority building",
+      "Profile & information consistency",
+    ],
+  },
+];
+
+const prPlans = [
+  {
+    name: "Press Release",
+    price: "₹999",
+    period: "",
+    desc: "Get your brand, business or announcement published online.",
+    features: [
+      "Professional press release content",
+      "News & announcement publishing",
+      "Online media distribution",
+      "Brand information coverage",
+    ],
+  },
+  {
+    name: "IMDb Profile",
+    price: "₹1,500",
+    period: "",
+    desc: "Create and strengthen your professional presence on IMDb.",
+    features: [
+      "IMDb profile setup assistance",
+      "Professional profile information",
+      "Credits & biography guidance",
+      "Profile optimization support",
     ],
   },
 ];
@@ -146,10 +183,16 @@ function PricingCards() {
             icon={sellerIcon}
             plans={sellerPlans}
           />
+          <PlanCard title="Web Services" icon={webIcon} plans={webPlans} />
           <PlanCard
-            title="Website Development"
+            title="Google Knowledge & Online Profile"
             icon={webIcon}
-            plans={webPlans}
+            plans={bioPlans}
+          />
+          <PlanCard
+            title="PR & Digital Presence"
+            icon={webIcon}
+            plans={prPlans}
           />
         </div>
       </div>

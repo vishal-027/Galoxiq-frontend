@@ -28,16 +28,20 @@ function Hero() {
           </div>
           <div className="hero-stats">
             <div>
-              <strong>250+</strong>
+              <strong>25+</strong>
               <span>Sellers managed</span>
             </div>
             <div>
-              <strong>120+</strong>
+              <strong>10+</strong>
               <span>Websites launched</span>
             </div>
-            <div>
+            {/* <div>
               <strong>4.9/5</strong>
               <span>Client rating</span>
+            </div> */}
+            <div>
+              <strong>5+</strong>
+              <span>Digital services</span>
             </div>
           </div>
         </div>

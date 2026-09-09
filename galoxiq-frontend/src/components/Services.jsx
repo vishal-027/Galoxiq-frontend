@@ -2,7 +2,7 @@ import "./Services.css";
 
 const services = [
   {
-    num: "SERVICE 01",
+    // num: "SERVICE 01",
     title: "Seller Account Management",
     desc: "We manage your day-to-day marketplace operations across Amazon, Flipkart, Meesho, JioMart and more — helping keep your store organized, optimized and growing.",
     points: [
@@ -26,14 +26,60 @@ const services = [
     ),
   },
   {
-    num: "SERVICE 02",
-    title: "Web Development",
+    // num: "SERVICE 02",
+    title: "Web Services",
     desc: "We design and build modern websites for businesses of all sizes — from local businesses and service providers to growing companies, manufacturers and enterprises.",
     points: [
       "Custom website design & build",
       "Business & corporate websites",
       "Product & corporate websites",
       "Ongoing support & maintenance",
+    ],
+    // linkText: "Get started with web development",
+    icon: (
+      <svg
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="2"
+      >
+        <rect x="2" y="4" width="20" height="14" rx="2" />
+        <line x1="2" y1="20" x2="22" y2="20" />
+      </svg>
+    ),
+  },
+  {
+    // num: "SERVICE 03",
+    title: "Google Knowledge & Online Profile",
+    desc: "Build a stronger and more credible presence across Google and other major online platforms.",
+    points: [
+      "Google Knowledge Panel & profile setup",
+      "Google Business & information optimization",
+      "Online profile consistency",
+      "Authority-building content",
+    ],
+    // linkText: "Get started with web development",
+    icon: (
+      <svg
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="2"
+      >
+        <rect x="2" y="4" width="20" height="14" rx="2" />
+        <line x1="2" y1="20" x2="22" y2="20" />
+      </svg>
+    ),
+  },
+  {
+    // num: "SERVICE 04",
+    title: "PR & Digital Presence",
+    desc: "Strengthen your online reputation through professional profiles, press coverage and digital visibility.",
+    points: [
+      "IMDb profile & eligibility guidance",
+      "Press release publishing",
+      "Brand & personal profile building",
+      "Online reputation support",
     ],
     // linkText: "Get started with web development",
     icon: (
